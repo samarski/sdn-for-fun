@@ -11,10 +11,10 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: sdn-for-fun_development
+  database: sdn_development
   pool: 5
-  username: sdn-for-fun
-  password:
+  username: sdn
+  password: sdn
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -37,15 +37,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: sdn-for-fun_test
+  database: sdn_test
   pool: 5
-  username: sdn-for-fun
-  password:
+  username: sdn
+  password: sdn
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: sdn-for-fun_production
+  database: sdn_production
   pool: 5
-  username: sdn-for-fun
-  password:
+  username: sdn
+  password: sdn

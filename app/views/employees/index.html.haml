@@ -1,0 +1,20 @@
+%h1 Spisak uposlenika
+
+%table
+  %tr
+    %th Ime
+    %th Srednje ime
+    %th Prezime
+    %th ERP ID
+  - @employees.each do |employee| 
+    %tr
+      %td= h employee.name
+      %td= h employee.middle_name
+      %td= h employee.last_name
+      %td= h employee.erp_id
+      %td= link_to 'Show', employee
+      %td= link_to 'Edit', edit_employee_path(employee)
+      %td= link_to 'Destroy', employee, :confirm => 'Are you sure?', :method => :delete 
+
+%br
+= link_to 'Novi uposlenik', new_employee_path

@@ -1,0 +1,21 @@
+- form_for(@employee) do |f| 
+  = f.error_messages 
+
+  %p
+    = f.label :name 
+    %br
+    = f.text_field :name 
+  %p
+    = f.label :middle_name
+    %br
+    = f.text_field :middle_name 
+  %p
+    = f.label :last_name
+    %br
+    = f.text_field :last_name
+  %p
+    ERP ID
+    %br
+    = f.text_field :erp_id
+  %p
+    = f.submit 'Update'

@@ -1,0 +1,21 @@
+%h1 Prikaz podataka o uposleniku
+
+%p
+  %b Name:
+  =h @employee.name
+
+%p
+  %b Middle name:
+  =h @employee.middle_name
+
+%p
+  %b Last name:
+  =h @employee.last_name
+
+%p
+  %b ERP ID:
+  =h @employee.erp_id 
+
+= link_to 'Edit', edit_employee_path(@employee) 
+|
+= link_to 'Back', employees_path
